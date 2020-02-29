@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form data-netlify="true" data-netlify-honeypot="bot-field">
-    <h1>Test w/o data attribute</h1>
+<h1>Test w/ data attribute</h1>
+<form action="/" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="bot-field" />
+
+    <label for="first">First:</label>
+    <input id="first" type="text" value="">
+
+    <label for="second">Second</label>
+    <input id="second" type="text" value="">
+
+    <button type="submit"></button>
 </form>
 </body>
 </html>
